@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Prototype built over a weekend, don't judge the code :) -->
+    <meta name="viewport" content="width=device-width" />
     <title>Compliance Tree</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-882GN3SWF1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-882GN3SWF1");
+    </script>
     <style>
       body {
         padding: 0;
@@ -53,6 +68,7 @@
       .button {
         display: inline-block;
         outline: none !important;
+        padding: 16px;
       }
 
       .button:hover {
@@ -61,30 +77,44 @@
         background-color: #ac8357;
       }
 
-      #sceneControls, #helpText {
+      #sceneControls,
+      #helpText {
         display: none;
+        margin-top: 1rem;
       }
 
       #sceneControls a {
         text-decoration: none;
         color: #ac8357 !important;
       }
+
+      #btnAbout {
+
+      }
+
+      #lblAbout {
+        color: #ac8357 !important;
+      }
+
     </style>
   </head>
   <body>
     <div class="controls">
       <div class="mainHeader">#ProtectThePack</div>
-      <div class="section1">
+      <div class="section0">
+        <!-- <button id="btnAbout">About this site  &#10140;</button> -->
+        <div id="lblAbout">An interactive visualization prototype of the university's COVID-19 community test status, pulled from public data sources. This version uses static data.</div>
+      </div>
+      <!-- <div class="section1"> <button
+        class="controlsKeys button"
+        data-key="KeyS"
+        title="Start the experience"
+      >
+        Start the experience (S) &#10140;
+      </button>
         <div class="controlsStatus" id="lblSignalR">Connecting...</div>
         <div class="controlsStatus" id="lblData">Static Data</div>
-        <button
-          class="controlsKeys button"
-          data-key="KeyS"
-          title="Start the experience"
-        >
-          Start the experience (S) &#10140;
-        </button>
-      </div>
+      </div> -->
       <div id="sceneControls">
         <button
           class="controlsKeys button"
@@ -130,5 +160,5 @@
         Press button/key for action. Click and drag to Pan/Rotate/Zoom.
       </div>
     </div>
-  <script type="text/javascript" src="main.69aeea8bb8de65d38382.js"></script></body>
+  <script type="text/javascript" src="main.b391e7cf5410d29819c7.js"></script></body>
 </html>
