@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compliance Tree</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background: linear-gradient(to top, #f2e6d9 0%, #ffffff 70%);
+      }
+
+      .mainHeader {
+        color: #e2c9af;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-transform: none;
+      }
+
+      .controls {
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        color: #fffaf5;
+        padding: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6rem;
+      }
+
+      .controlsStatus {
+        display: inline-block;
+        padding: 4px 8px;
+        background-color: #e2c9af;
+        margin-right: 4px;
+      }
+
+      .controlsKeys {
+        display: inline-block;
+        padding: 3px 8px;
+        color: #ac8357;
+        border: solid 1px #e2c9af;
+        border-radius: 2px;
+        margin: 4px;
+        margin-left: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.6rem;
+        cursor: pointer !important;
+      }
+
+      .button {
+        display: inline-block;
+        outline: none !important;
+      }
+
+      .button:hover {
+        color: white;
+        border: solid 1px #ac8357;
+        background-color: #ac8357;
+      }
+
+      #sceneControls, #helpText {
+        display: none;
+      }
+
+      #sceneControls a {
+        text-decoration: none;
+        color: #ac8357 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="mainHeader">#ProtectThePack</div>
+      <div class="section1">
+        <div class="controlsStatus" id="lblSignalR">Connecting...</div>
+        <div class="controlsStatus" id="lblData">Static Data</div>
+        <button
+          class="controlsKeys button"
+          data-key="KeyS"
+          title="Start the experience"
+        >
+          Start the experience (S) &#10140;
+        </button>
+      </div>
+      <div id="sceneControls">
+        <button
+          class="controlsKeys button"
+          data-key="KeyN"
+          title="Drop some leaves"
+        >
+          Drop some leaves (N)
+        </button>
+        <button
+          class="controlsKeys button"
+          data-key="KeyM"
+          title="Drop more leaves"
+        >
+          Drop many leaves (M)
+        </button>
+        <button
+          class="controlsKeys button"
+          data-key="KeyX"
+          title="Drop all leaves"
+        >
+          Drop all leaves (X)
+        </button>
+        <button
+          class="controlsKeys button"
+          data-key="KeyB"
+          title="Birds and leaves"
+        >
+          Birds and leaves (B)
+        </button>
+        <button class="controlsKeys button" data-key="KeyL" title="Add leaves">
+          Add leaves (L)
+        </button>
+        <a href="https://nufx-tree.azurewebsites.net/post.html" target="_blank"
+          >Post a message to the Tree &#10140;</a
+        >
+      </div>
+      <div
+        id="helpText"
+        class="controlsKeys"
+        style="border: none; color: #e2c9af; display: block; padding: 0px"
+        title="Control guide"
+      >
+        Press button/key for action. Click and drag to Pan/Rotate/Zoom.
+      </div>
+    </div>
+  <script type="text/javascript" src="main.69aeea8bb8de65d38382.js"></script></body>
+</html>
